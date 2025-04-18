@@ -1,38 +1,73 @@
-.App {
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  padding: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  text-decoration: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 20px;
+  color: #555;
+}
+
+.weather-card {
+  width: 300px;
+  margin: 40px auto;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-card .top {
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-card .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.weather-card .temp {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.weather-card .desc {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.weather-card .bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.weather-card .item {
+  text-align: center;
+  font-size: 16px;
 }

@@ -4,10 +4,10 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 
-const OPENWEATHER_API_KEY = '6d40a45b9a7366fb3ff7335711665b17';
-const WEATHERAPI_KEY = 'f741b3df12064afc86662903251804';
-const TOMORROW_API_KEY = 'RREECmEWprb7bICnllgKglXymreruo1K';
-const VISUALCROSSING_API_KEY = 'VWMQUVEXWWZL3FQP2PGM22YTR';
+const OPENWEATHER_API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY;
+const WEATHERAPI_KEY = process.env.REACT_APP_WEATHERAPI_KEY;
+const TOMORROW_API_KEY = process.env.REACT_APP_TOMORROW_API_KEY;
+const VISUALCROSSING_API_KEY = process.env.REACT_APP_VISUALCROSSING_API_KEY;
 // Dubai (Pratik Location)
 const LAT = '25.2521415';
 const LON = '55.2925677';
